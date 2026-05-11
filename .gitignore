@@ -8,6 +8,7 @@ php_error.log
 
 # Git
 .git/
+vendor/
 
 # Temporales de edición
 *.tmp
