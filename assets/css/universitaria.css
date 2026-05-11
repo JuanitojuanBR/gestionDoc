@@ -1,0 +1,131 @@
+:root {
+    --primary-blue: #003366; /* Azul Institucional */
+    --accent-red: #A51C30;   /* Rojo Universitario */
+    --accent-yellow: #F1C400; /* Dorado Universitario */
+    --bg-light: #f8fafc;
+    --text-dark: #1e293b;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ══ BARRA DE NAVEGACIÓN ════════════════════════════════════ */
+.navbar {
+    background-color: var(--primary-blue) !important;
+    border-bottom: 3px solid var(--accent-yellow);
+    padding: 0.8rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition-smooth);
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-yellow) !important;
+}
+
+.nav-link.active {
+    background: var(--accent-red) !important;
+    color: white !important;
+}
+
+/* ══ ESTILO DE TARJETAS (CARDS) ═════════════════════════════ */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+/* ══ BOTONES ════════════════════════════════════════════════ */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #002244;
+    border-color: #002244;
+}
+
+.btn-accent {
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+}
+
+.btn-accent:hover {
+    background-color: #8c1729;
+    color: white;
+}
+
+/* ══ SECCIONES HERO/BANNER ══════════════════════════════════ */
+.hero-banner {
+    background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), 
+                url('../img/hero-bg.jpg') center/cover;
+    color: white;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    border-bottom: 5px solid var(--accent-red);
+}
+
+/* ══ TABLAS ═════════════════════════════════════════════════ */
+.table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #f1f5f9;
+    color: var(--primary-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* ══ UTILIDADES ═════════════════════════════════════════════ */
+.text-u { color: var(--primary-blue); }
+.bg-u { background-color: var(--primary-blue); }
+.border-u { border-color: var(--primary-blue); }

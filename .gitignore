@@ -1,0 +1,14 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# XAMPP / Servidor
+config/database_local.php
+php_error.log
+
+# Git
+.git/
+
+# Temporales de edición
+*.tmp
+*.bak
